@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
-    public float movementSpeed = 10f;
+    public float movementSpeed = 20f;
 
     float movement = 0f;
     Rigidbody2D rb;
+
+    int score;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +23,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement = Input.GetAxis("Horizontal") * movementSpeed;
+        movement = Input.acceleration.x * movementSpeed;
     }
 
     void FixedUpdate() 
@@ -28,4 +32,18 @@ public class Player : MonoBehaviour
         velocity.x = movement;
         rb.velocity = velocity;
     }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.CompareTag("CoinCheck")) 
+        {            
+            Destroy(other.gameObject);
+            ScoreUp();
+        }
+    }
+
+    public void ScoreUp() {
+        score++;
+        scoreText.text = "X" + score.ToString();
+    }
+
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
@@ -33,11 +34,14 @@ public class Player : MonoBehaviour
         rb.velocity = velocity;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.CompareTag("CoinCheck")) 
         {            
             Destroy(other.gameObject);
             ScoreUp();
+        } else if (other.gameObject.CompareTag("FallCheck"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

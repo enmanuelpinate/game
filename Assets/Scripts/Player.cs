@@ -34,12 +34,13 @@ public class Player : MonoBehaviour
         rb.velocity = velocity;
     }
 
-    void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.CompareTag("CoinCheck")) 
+    private void OnCollisionEnter2D(Collision2D collision) 
+    {
+        if(collision.gameObject.tag == "CoinCheck") 
         {            
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
             ScoreUp();
-        } else if (other.gameObject.CompareTag("FallCheck"))
+        } else if (collision.gameObject.tag == "FallCheck")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

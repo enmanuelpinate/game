@@ -1,4 +1,4 @@
-#Tue Mar 24 11:07:07 CET 2020
+#Tue Mar 24 16:34:03 CET 2020
 base.0=/Users/enmanuelpinate/Desktop/UNITY/My 2D Game/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Mar 24 11:07:08 CET 2020
+#Tue Mar 24 16:34:04 CET 2020
 60.set=ASSET
 52.set=ASSET
 53.base=/Users/enmanuelpinate/Desktop/UNITY/My 2D Game/Temp/gradleOut/launcher/build/intermediates/merged_assets/release/out

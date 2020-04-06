@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7286375879921875745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7286375879921875743}
+  - component: {fileID: 7286375879921875744}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7286375879921875743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286375879921875745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7286375879921875744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286375879921875745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb19beff372847c88ef29cee0d81dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: jumpSound
+    clip: {fileID: 8300000, guid: 74cd9368649454cd488c40540107d5d2, type: 3}
+    volume: 0.73
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: powerUp
+    clip: {fileID: 8300000, guid: 022eadaaec74a4cb89be42fd88bd3559, type: 3}
+    volume: 0.73
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: theme
+    clip: {fileID: 8300000, guid: 7c4fb540a4d514fbab52ecc3ae72e7b8, type: 3}
+    volume: 0.15
+    pitch: 0.61
+    loop: 0
+    source: {fileID: 0}

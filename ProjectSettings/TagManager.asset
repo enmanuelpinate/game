@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CoinCheck
   - FallCheck
+  - Sides
+  - greenPlatform
   layers:
   - Default
   - TransparentFX

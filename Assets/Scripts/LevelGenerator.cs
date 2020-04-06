@@ -6,10 +6,10 @@ public class LevelGenerator : MonoBehaviour
 {
     public GameObject platformPrefab;
 
-    public int numberOfPlatforms = 200;
-    public float levelWidth = 1.94f;
-    public float minY = .5f;
-    public float maxY = 1.5f;
+    public int numberOfPlatforms = 600;
+    public float levelWidth = 2f;
+    public float minY = 1.5f;
+    public float maxY = 2.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +22,6 @@ public class LevelGenerator : MonoBehaviour
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
+
     }
 }

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class Crystal : MonoBehaviour
+public class Crystal : MonoBehaviour
 {
     public GameObject crystalPrefab;
 
-	public int numberOfCrystals = 200;
-	public float levelWidth = 3f;
-	public float minY = .2f;
-	public float maxY = 1.5f;
+	public int numberOfCrystals = 20;
+	public float levelWidth = 1.94f;
+	public float minY = 3f;
+	public float maxY = 10f;
 
 	// Use this for initialization
 	void Start () {
@@ -23,4 +23,4 @@ using UnityEngine;
 			Instantiate(crystalPrefab, spawnPosition, Quaternion.identity);
 		}
 	}
-}*/
+}

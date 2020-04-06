@@ -28,6 +28,8 @@ public class Bouncy : MonoBehaviour
                 Vector2 velocity = rb.velocity;
                 velocity.y = jumpForce;
                 rb.velocity = velocity;
+
+                FindObjectOfType<AudioManager>().Play("jumpSound");
             }
         }
     }

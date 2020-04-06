@@ -1,13 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - Bouncy
+    - BouncyPlatform2
     - CameraFollow
     - ContinueGame
+    - Crystal
     - Destroy
+    - LeftSide
+    - Level2Generator
     - LevelGenerator
     - MainMenu
     - Player
+    - RightSide
+    - ScreenManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -110,7 +117,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 70
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -138,6 +153,18 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13086}
     - Class: 114
       Script: {instanceID: 22188}
+    - Class: 114
+      Script: {instanceID: 47198}
+    - Class: 114
+      Script: {instanceID: 47334}
+    - Class: 114
+      Script: {instanceID: 57934}
+    - Class: 114
+      Script: {instanceID: 62678}
+    - Class: 114
+      Script: {instanceID: 65334}
+    - Class: 114
+      Script: {instanceID: 85116}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,6 +202,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 109
@@ -205,6 +234,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13086}
     - Class: 114
       Script: {instanceID: 20724}
+    - Class: 114
+      Script: {instanceID: 65334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -422,6 +453,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: d6febc02625f8e289a641f20d976e735
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Crystal
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -884,9 +921,45 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ContinueGame
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RightSide
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeftSide
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenManager
+  - hash:
+      serializedVersion: 2
+      Hash: ca632015b06984e4bb3af474ed31eb9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Level2Generator
+  - hash:
+      serializedVersion: 2
+      Hash: 66056c2209ff8e6b238f8b056c7eb331
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: b3c7b76445e5cc072e6736a1f68299d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BouncyPlatform2
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/ContinueGame.unity
-  playerPath: /Users/enmanuelpinate/Desktop/Space-1.2.2.apk
+  playerPath: /Users/enmanuelpinate/Desktop/Space-1.4.2.apk

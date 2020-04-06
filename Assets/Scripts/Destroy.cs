@@ -19,7 +19,7 @@ public class Destroy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("FallCheck"))
+        if(collision.gameObject.CompareTag("FallCheck") || collision.gameObject.CompareTag("Sides"))
         {
         } else {
             Destroy(collision.gameObject);
